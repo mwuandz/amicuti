@@ -82,38 +82,6 @@
       '
     >
   </div>
-    <div id="love-messages" style="text-align: center; margin-top: 40px;">
-  <div id="text" style="font-size: 28px; color: #ff0019; margin-bottom: 10px;"></div>
-  <img id="message-image" src="" style="max-width: 300px; border-radius: 16px;" />
-</div>
-
-<script>
-  const messages = [
-    "Wuan❤Ami",
-    "i love you",
-    "07/06/2008",
-    "11/06/2008",
-    "minh quan❤lan anhhhh"
-  ];
-
-  const images = [
-    "https://img.upanh.tv/2025/06/02/b983619a-37ee-4598-b7d4-3ffdf1e51862.jpg"
-  ];
-
-  let i = 0;
-  const text = document.getElementById('text');
-  const img = document.getElementById('message-image');
-
-  function showNext() {
-    text.innerText = messages[i % messages.length];
-    img.src = images[Math.floor(Math.random() * images.length)];
-    i++;
-  }
-
-  showNext();
-  setInterval(showNext, 3000);
-</script>
-
   <script type="module" src="/static/js/app.js"></script>
   <script type="module" src="/static/js/home.js"></script>
   </body>
